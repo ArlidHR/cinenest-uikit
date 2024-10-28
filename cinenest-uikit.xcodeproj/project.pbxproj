@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		94E385EE2CAB58F900E31C96 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 94E385ED2CAB58F900E31C96 /* Kingfisher */; };
+		94E385F02CAB58F900E31C96 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 94E385EF2CAB58F900E31C96 /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		94E385562CA71A7D00E31C96 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94E385EE2CAB58F900E31C96 /* Kingfisher in Frameworks */,
+				94E385F02CAB58F900E31C96 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +98,7 @@
 				94E385412CA71A7C00E31C96 /* cinenest-uikit */,
 				94E385582CA71A7D00E31C96 /* cinenest-uikitTests */,
 				94E385622CA71A7D00E31C96 /* cinenest-uikitUITests */,
+				94E385E82CAB34CD00E31C96 /* Frameworks */,
 				94E385402CA71A7C00E31C96 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +111,13 @@
 				94E3855F2CA71A7D00E31C96 /* cinenest-uikitUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		94E385E82CAB34CD00E31C96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +140,8 @@
 			);
 			name = "cinenest-uikit";
 			packageProductDependencies = (
+				94E385ED2CAB58F900E31C96 /* Kingfisher */,
+				94E385EF2CAB58F900E31C96 /* Alamofire */,
 			);
 			productName = "cinenest-uikit";
 			productReference = 94E3853F2CA71A7C00E31C96 /* cinenest-uikit.app */;
@@ -208,6 +225,10 @@
 			);
 			mainGroup = 94E385362CA71A7C00E31C96;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				94E385EB2CAB58D500E31C96 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				94E385EC2CAB58ED00E31C96 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 94E385402CA71A7C00E31C96 /* Products */;
 			projectDirPath = "";
@@ -294,7 +315,6 @@
 				INFOPLIST_FILE = "cinenest-uikit/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +342,6 @@
 				INFOPLIST_FILE = "cinenest-uikit/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -569,6 +588,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		94E385EB2CAB58D500E31C96 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.3;
+			};
+		};
+		94E385EC2CAB58ED00E31C96 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		94E385ED2CAB58F900E31C96 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 94E385EB2CAB58D500E31C96 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		94E385EF2CAB58F900E31C96 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 94E385EC2CAB58ED00E31C96 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 94E385372CA71A7C00E31C96 /* Project object */;
 }
